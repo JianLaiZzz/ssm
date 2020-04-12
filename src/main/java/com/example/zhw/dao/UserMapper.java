@@ -1,0 +1,22 @@
+package com.example.zhw.dao;
+
+/**
+ * 
+ * @author: zhw
+ * @createDate: 2020/4/12
+ * 
+ */
+
+public interface UserMapper {
+    int deleteByPrimaryKey(Integer userId);
+
+    int insert(User record);
+
+    int insertSelective(User record);
+
+    User selectByPrimaryKey(Integer userId);
+
+    int updateByPrimaryKeySelective(User record);
+
+    int updateByPrimaryKey(User record);
+}
