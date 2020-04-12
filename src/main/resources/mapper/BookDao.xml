@@ -35,4 +35,9 @@
 			book_id = #{bookId}
 		AND number > 0
 	</update>
+
+
+
+
+
 </mapper>
