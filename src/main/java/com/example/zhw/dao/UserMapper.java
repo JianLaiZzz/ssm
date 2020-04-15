@@ -1,10 +1,12 @@
 package com.example.zhw.dao;
 
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
 /**
- * 
  * @author: zhw
  * @createDate: 2020/4/12
- * 
  */
 
 public interface UserMapper {
@@ -19,4 +21,11 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    List<User> queryAllByUserIdAfterAndAge(@Param("minUserId") Integer minUserId, @Param("age") Integer age);
+
+
+    List<User> findAllByAgeAfterAndNameAfter(@Param("minAge") Integer minAge, @Param("minName") String minName);
+
+
 }

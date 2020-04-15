@@ -1,5 +1,5 @@
 package com.example.zhw.dao;
-
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -8,56 +8,70 @@ import java.util.Date;
  * @createDate: 2020/4/12
  * 
  */
-public class User {
-    /**
-    * userId
-    */
-    private Integer userId;
+public class User implements Serializable
+{
+	private static final long serialVersionUID = 8808349070517026234L;
+	/**
+	 * userId
+	 */
+	private Integer userId;
 
-    /**
-    * name
-    */
-    private String name;
+	/**
+	 * name
+	 */
+	private String name;
 
-    /**
-    * age
-    */
-    private Integer age;
+	/**
+	 * age
+	 */
+	private Integer age;
 
-    /**
-    * datebith
-    */
-    private Date datebith;
+	/**
+	 * datebith
+	 */
+	private Date datebith;
 
-    public Integer getUserId() {
-        return userId;
-    }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
 
-    public String getName() {
-        return name;
-    }
+    public Integer getUserId()
+	{
+		return userId;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setUserId(Integer userId)
+	{
+		this.userId = userId;
+	}
 
-    public Integer getAge() {
-        return age;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
-    public Date getDatebith() {
-        return datebith;
-    }
+	public Integer getAge()
+	{
+		return age;
+	}
 
-    public void setDatebith(Date datebith) {
-        this.datebith = datebith;
-    }
+	public void setAge(Integer age)
+	{
+		this.age = age;
+	}
+
+	public Date getDatebith()
+	{
+		return datebith;
+	}
+
+	public void setDatebith(Date datebith)
+	{
+		this.datebith = datebith;
+	}
+
+
 }

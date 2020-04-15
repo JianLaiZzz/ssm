@@ -139,6 +139,16 @@
             <artifactId>commons-collections</artifactId>
             <version>3.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>3.1.1</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>ssm</finalName>
